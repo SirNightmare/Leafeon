@@ -1,0 +1,27 @@
+{
+  "name": "leafeon",
+  "version": "1.0.0",
+  "description": "Sylveon's Brother",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oliver Kenenwell and Callum Sylvester",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "discord.js-musicbot-addon": "^12.0.6",
+    "fortnite": "^4.1.1",
+    "fs": "0.0.1-security",
+    "gif-search": "^2.0.1",
+    "google-translate-api": "^2.3.0",
+    "humanize-duration": "^3.14.0",
+    "mathjs": "^4.4.2",
+    "opusscript": "0.0.6",
+    "quick.hook": "^1.4.2",
+    "random-puppy": "^1.1.0",
+    "snekfetch": "^4.0.2",
+    "superagent": "^3.8.3",
+    "weather-js": "^2.0.0"
+  }
+}
