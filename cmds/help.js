@@ -42,6 +42,8 @@ var embed = new Discord.RichEmbed()
 .setColor("RANDOM")
 .addField(`~weather (location)`, `Sends weather infomation on the location!`)
 .addField(`~translate (language) (word/phrase/sentence)`, `Translates the thext to the selected language!`)
+.addField(`~servers`, `All servers Leafeon is in!`)
+.addField(`~serverinfo`, `Server info about the server!`)
 message.author.send(embed)
 
 var embed = new Discord.RichEmbed()

@@ -61,7 +61,7 @@ bot.on("ready", async () => {
     console.log("Token: " + settings.token);
     console.log("Prefix: " + settings.prefix);
     console.log(bot.commands);
-    bot.user.setPresence({ game: { name: `My Sister Sylveon | ~help for help`, url: 'https://twitch.tv/monstercat', type: 1 } });
+    bot.user.setPresence({ game: { name: `My Sister Sylveon | ¬help for help`, url: 'https://twitch.tv/monstercat', type: 1 } });
 });
 
 bot.on("message", async message => {
@@ -77,4 +77,4 @@ bot.on("message", async message => {
     if(cmd) cmd.run(bot, message, args);
     
       });
-bot.login(process.env.BOT_TOKEN);
+bot.login(settings.token);
