@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const prefix = "¬"
+const prefix = "~"
 let bot = new Discord.Client();
 var math = require('mathjs');
 const gifSearch = require("gif-search");
