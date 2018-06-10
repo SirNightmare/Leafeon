@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const superagent = require("superagent");
 const send = require("quick.hook");
-var prefix = "¬"
+var prefix = "~"
 
 module.exports.run = async (bot, message, args) => {
 
