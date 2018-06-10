@@ -5,7 +5,7 @@ const Music = require('discord.js-musicbot-addon');
 let bot = new Discord.Client();
 Music.start(bot, {
   youtubeKey: "AIzaSyChV72AqgUOWab694WT3zdK6EIbY0EGRuc",
-  prefix: "¬", 
+  prefix: "~", 
    helpCmd: "mhelp",
    global: false, 
    maxQueueSize: 50,
@@ -61,7 +61,7 @@ bot.on("ready", async () => {
     console.log("Token: " + settings.token);
     console.log("Prefix: " + settings.prefix);
     console.log(bot.commands);
-    bot.user.setPresence({ game: { name: `My Sister Sylveon | ¬help for help`, url: 'https://twitch.tv/monstercat', type: 1 } });
+    bot.user.setPresence({ game: { name: `My Sister Sylveon | ~help for help`, url: 'https://twitch.tv/monstercat', type: 1 } });
 });
 
 bot.on("message", async message => {
