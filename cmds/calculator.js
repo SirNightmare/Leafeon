@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const prefix = "¬"
+const prefix = "~"
 let bot = new Discord.Client();
 var math = require('mathjs');
 module.exports.run = async (bot, message, args) => {
