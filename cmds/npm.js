@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const prefix = "¬"
+const prefix = "~"
 const snekfetch = require("snekfetch");
 const humanizeduration = require("humanize-duration");
 let bot = new Discord.Client();
