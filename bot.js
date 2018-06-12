@@ -71,7 +71,7 @@ bot.on("message", async message => {
 
     let messsageArray = message.content.split(" ");
     let command = messsageArray[0];
-   let args = messsageArray.slice(1);
+    let args = messsageArray.slice(1);
 
     if(!command.startsWith(settings.prefix)) return;
 
@@ -79,4 +79,4 @@ bot.on("message", async message => {
     if(cmd) cmd.run(bot, message, args);
     
       });
-bot.login(process.env.BOT_TOKEN);
+bot.login("NDUzOTcwMTUyNjIzNzAyMDI2.DgGDfA.DuWGAZKudjv4m896W5YNCf7vbC4");

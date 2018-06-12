@@ -3,8 +3,8 @@ const prefix = "~"
 let bot = new Discord.Client();
 let client = new Discord.Client();
 module.exports.run = async (bot, message, args) => {
-  message.reply(`Check you DM's :inbox_tray:`)
 var embed = new Discord.RichEmbed()
+message.reply(`Check you DM's :inbox_tray:`)
 .setAuthor(` | Commands`, `${bot.user.avatarURL}`)
 .setTitle("Fun!")
 .addField(`~calculate (equasion)`, `Solves the equasion!`)
@@ -57,7 +57,15 @@ var embed = new Discord.RichEmbed()
 .addField(`~move (Pokemon Move)`, `Sends you info on the given move!`)
 message.author.send(embed)
 
-
+var embed = new Discord.RichEmbed()
+.setAuthor(` | Commands`, `${bot.user.avatarURL}`)
+.setTitle("Moderation")
+.setColor("RANDOM")
+.addField(`~ban`, `Manage Members permission needed also an incidents channel!`)
+.addField(`~mute`, `Mute Members permission needed!`)
+.addField(`~unmute`, `Mute Members permission needed!`)
+.addField(`~kick`, `Manage Messages permission needed!`)
+message.author.send(embed)
 
   }
 
