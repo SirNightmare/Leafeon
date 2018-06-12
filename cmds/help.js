@@ -3,8 +3,8 @@ const prefix = "~"
 let bot = new Discord.Client();
 let client = new Discord.Client();
 module.exports.run = async (bot, message, args) => {
+  message.reply(`Check you DM's :inbox_tray:`)
 var embed = new Discord.RichEmbed()
-message.reply(`Check you DM's :inbox_tray:`)
 .setAuthor(` | Commands`, `${bot.user.avatarURL}`)
 .setTitle("Fun!")
 .addField(`~calculate (equasion)`, `Solves the equasion!`)
