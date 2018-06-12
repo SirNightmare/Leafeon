@@ -3,6 +3,7 @@ const settings = require("./settings.json");
 const fs = require("fs");
 const Music = require('discord.js-musicbot-addon');
 let bot = new Discord.Client();
+var prefix = '~';
 Music.start(bot, {
   youtubeKey: "AIzaSyChV72AqgUOWab694WT3zdK6EIbY0EGRuc",
   prefix: "~", 
@@ -35,7 +36,7 @@ var google = `<@409751964662890508>`
 
 bot.commands =  new Discord.Collection();
 
-const prefix = settings.prefix;
+
 
 fs.readdir("./cmds/", (err, files) => {
   if(err) console.error(err);
@@ -67,9 +68,9 @@ bot.on("ready", async () => {
 bot.on("message", async message => {
     if(message.content.bot) return;
 
+
     let messsageArray = message.content.split(" ");
     let command = messsageArray[0];
-    let args = messsageArray.slice(1);
 
     if(!command.startsWith(settings.prefix)) return;
 
@@ -77,4 +78,4 @@ bot.on("message", async message => {
     if(cmd) cmd.run(bot, message, args);
     
       });
-bot.login(settings.token);
+bot.login(process.env.BOT_TOKEN);

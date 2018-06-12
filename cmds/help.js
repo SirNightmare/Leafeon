@@ -10,6 +10,7 @@ var embed = new Discord.RichEmbed()
 .addField(`~gif (gif name)`, `Searches and sends the gif!!`)
 .addField(`~ping`, `Sends the response time of Leafeon!`)
 .addField(`~npm (NPM package)`, `Sends infomation on the NPM package!`)
+.addField(`~rps`, `Play Rock, Paper, Scissors with Leafeon!`)
 .setColor("RANDOM")
 message.author.send(embed)
 
