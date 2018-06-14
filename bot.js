@@ -3,7 +3,7 @@ const settings = require("./settings.json");
 const fs = require("fs");
 const Music = require('discord.js-musicbot-addon');
 let bot = new Discord.Client();
-var prefix = '~';
+var prefix = 'L~';
 Music.start(bot, {
   youtubeKey: "AIzaSyChV72AqgUOWab694WT3zdK6EIbY0EGRuc",
   prefix: "~", 

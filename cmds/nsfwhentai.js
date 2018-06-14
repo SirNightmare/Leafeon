@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const prefix = "~"
+const prefix = "L~"
 let bot = new Discord.Client();
 let client = new Discord.Client();
 const superagent = require("superagent");
