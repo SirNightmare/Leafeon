@@ -8,6 +8,7 @@ let bot = new Discord.Client();
 module.exports.run = async (bot, message, args) => {
     let username = args[0];
     let platform = args[1] || "pc";
+    username = args.join(' ');
 
     if(!username) return message.reply("Sorry! you must provide a username.");
     let data = fortnite.user(username, platform).then(data => {
