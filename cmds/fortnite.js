@@ -32,11 +32,6 @@ module.exports.run = async (bot, message, args) => {
     .addField("K/D", kd, true)
     .setThumbnail("https://vignette.wikia.nocookie.net/fortnite/images/d/d8/Icon_Founders_Badge.png/revision/latest?cb=20170806011008")
     message.channel.send(embed)
-        .catch(error => {
-
-                            message.channel.send('Username not found!');
-
-                        })
     });
       }
 module.exports.help = {
