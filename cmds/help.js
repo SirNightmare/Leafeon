@@ -11,6 +11,7 @@ var embed = new Discord.RichEmbed()
 .addField(`L~gif (gif name)`, `Searches and sends the gif!!`)
 .addField(`L~ping`, `Sends the response time of Leafeon!`)
 .addField(`L~npm (NPM package)`, `Sends infomation on the NPM package!`)
+.addField(`L~fortnite (Username) (Platform | pc, xb1, psn)`, "Sends you the fortnite stats for the user you gave.")
 .setColor("RANDOM")
 message.author.send(embed)
 
@@ -66,7 +67,6 @@ var embed = new Discord.RichEmbed()
 .addField(`L~unmute (@mention)`, `Mute Members permission needed!`)
 .addField(`	L~kick (@mention) (Reason)`, `Manage Members permission needed!`)
 message.author.send(embed)
-
   }
 
 module.exports.help = {
