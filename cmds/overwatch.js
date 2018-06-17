@@ -6,10 +6,9 @@ const overwatch = require('overwatch-api');
 let bot = new Discord.Client();
 module.exports.run = async (bot, message, args) => {
     const tag = args[0];
-    const platform = args[1];
-    const region = args[2];
+    const platform = 'pc';
+    const region = args[1];
     if(!tag) return message.reply("Sorry! You must provide a username / battletag.");
-    if(!platform) return message.reply("Sorry! You must provide a platform. pc, xb1, psn")
     if(!region) return message.reply("Sorry! You must provide a region. us, eu, kr, cn, global.")
     overwatch.getProfile(platform, region, tag, (json) => {
         let lvl = json.level;

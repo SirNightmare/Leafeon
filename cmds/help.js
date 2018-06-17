@@ -12,7 +12,7 @@ var embed = new Discord.RichEmbed()
 .addField(`L~ping`, `Sends the response time of Leafeon!`)
 .addField(`L~npm (NPM package)`, `Sends infomation on the NPM package!`)
 .addField(`L~fortnite (Username) (Platform | pc, xb1, psn)`, "Sends you the Overwatch stats for the user you gave.")
-.addField(`L~overwatch (Username) (Platform | pc, xb1, psn) (Region | us, eu, kr, cn, global)`, "Sends you the Overwatch stats for the user you gave. Notice! If you use a pc BattleTag you will have to add the #number but change the # to a - eg Calvin-1337.")
+.addField(`L~overwatch (BattleTag) (Region | us, eu, kr, cn, global)`, "Sends you the pc (PC Onlysupported) Overwatch stats for the user you gave. Notice! If you use a pc BattleTag you will have to add the #number but change the # to a - eg Calvin-1337.")
 .setColor("RANDOM")
 message.author.send(embed)
 
