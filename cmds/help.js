@@ -64,7 +64,7 @@ var embed = new Discord.RichEmbed()
 .addField(`L~ban (@mention) (Reason)`, `Manage Members permission needed also an incidents channel!`)
 .addField(`L~mute (@mention || User ID)`, `Mute Members permission needed!`)
 .addField(`L~unmute (@mention)`, `Mute Members permission needed!`)
-.addField(`	L~kick (@mention) (Reason)`, `Manage Members permission needed!`)
+.addField(`	L~kick (@mention) (Reason)`, `MANAGE_MEMBERS permission needed also an incidents channel.`)
 message.author.send(embed)
   }
 
