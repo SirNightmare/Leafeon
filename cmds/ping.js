@@ -3,6 +3,7 @@ const prefix = "L~"
 let bot = new Discord.Client();
 var math = require('mathjs');
 module.exports.run = async (bot, message, args) => {
+    if(message.content.bot) return;
     const newemb = new Discord.RichEmbed()
     .setColor("RANDOM")
     .addField('```Latency: ```', new Date().getTime() - message.createdTimestamp + " ms ")

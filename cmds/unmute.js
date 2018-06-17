@@ -3,6 +3,7 @@ const prefix = "L~"
 const fs = require("fs");
 let bot = new Discord.Client();
 module.exports.run = async (bot, message, args) => {
+    if(message.content.bot) return;
     if(!message.member.hasPermission("MUTE_MEMBERS")) return message.channel.send("`You do not have the permission MUTE_MEMBERS`");
     
               let toMute = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);

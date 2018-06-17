@@ -3,6 +3,7 @@ const prefix = "L~"
 let bot = new Discord.Client();
 let client = new Discord.Client();
 module.exports.run = async (bot, message, args) => {
+  if(message.content.bot) return;
   message.reply(`Check you DM's :inbox_tray:`)
 var embed = new Discord.RichEmbed()
 .setAuthor(` | Commands`, `${bot.user.avatarURL}`)

@@ -4,6 +4,7 @@ let bot = new Discord.Client();
 const snekfetch = require('snekfetch');
 var math = require('mathjs');
 module.exports.run = async (bot, message, args) => {
+  if(message.content.bot) return;
    // Lets define our array of guilds
    const guildArray = bot.guilds.map((guild) => {
     return `${guild.name} : ${guild.id}`

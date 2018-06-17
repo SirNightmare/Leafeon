@@ -6,6 +6,7 @@ const Client = require("fortnite")
 const fortnite = new Client(settings.fortnite)
 let bot = new Discord.Client();
 module.exports.run = async (bot, message, args) => {
+    if(message.content.bot) return;
     let username = args[0];
     let platform = args[1] || "pc";
 

@@ -3,6 +3,7 @@ const prefix = "L~"
 const fs = require("fs");
 let bot = new Discord.Client();
 module.exports.run = async (bot, message, args) => {
+    if(message.content.bot) return;
     let botmessage = args.join(" ");
         if(message.author.id !== "360908660727087107") return;
     try {
