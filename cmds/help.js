@@ -57,7 +57,7 @@ var embed = new Discord.RichEmbed()
 .addField(`L~ability (Pokemon Ability)`, `Sends you info about the selected pokemon ability!`)
 .addField(`L~type (Pokemon Type)`, `Sends you info on the given type!`)
 .addField(`L~move (Pokemon Move)`, `Sends you info on the given move!`)
-.addField(`L~pokemon (Pokemon Name)`, `Sends you info on the given move!`)
+.addField(`L~pokemon (Pokemon Name)`, `Sends you a pokemon gif of the selected pokemon!`)
 message.author.send(embed)
 
 var embed = new Discord.RichEmbed()
