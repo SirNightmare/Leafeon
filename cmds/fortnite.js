@@ -3,7 +3,7 @@ const settings = require("../settings.json");
 const prefix = "L~"
 const fs = require("fs");
 const Client = require("fortnite")
-const fortnite = new Client(settings.fortnite)
+const fortnite = new Client(process.env.FORTNITE)
 let bot = new Discord.Client();
 module.exports.run = async (bot, message, args) => {
     if(message.content.bot) return;
