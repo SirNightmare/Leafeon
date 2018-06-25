@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
     .setColor("RANDOM")
     .setAuthor(` | Apply by ${message.author.username}#${message.author.discriminator}`, bot.user.avatarURL)
     .addField("Reason", apply)
-    .setFooter(`Staff please reply with L~accept ${message.author.id} or L~decline ${message.author.id}.`)
+    .setFooter(`Staff please reply with L~accept (${message.author.id}) or L~decline (${message.author.id}).`)
     message.channel.send(embed)
 }
 module.exports.help = {
