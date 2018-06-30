@@ -49,6 +49,7 @@ var embed = new Discord.RichEmbed()
 .addField(`L~translate (language) (word/phrase/sentence)`, `Translates the thext to the selected language!`)
 .addField(`L~servers`, `All servers Leafeon is in!`)
 .addField(`L~serverinfo`, `Server info about the server!`)
+.addField(`L~support (Problem)`, `Gets you a support ticket that gets sent to a staff channel for the staff to sort out (Need a channel named staff_support_requests)`)
 message.author.send(embed)
 
 var embed = new Discord.RichEmbed()
