@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Oliver Kenenwell and Callum Sylvester",
+  "author": "Oliver Kenenwell",
   "license": "ISC",
   "dependencies": {
     "azlyricsman": "^0.1.5",
@@ -44,6 +44,8 @@
     "superagent": "^3.8.3",
     "urban-dictionary": "^1.0.7",
     "weather-js": "^2.0.0",
-    "ytdl-core": "^0.20.4"
+    "youtube-playlist-info": "^1.1.2",
+    "ytdl-core": "^0.20.4",
+    "ytsearcher": "^1.1.2"
   }
 }
