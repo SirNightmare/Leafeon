@@ -39,7 +39,7 @@ bot.on("ready", async () => {
     bot.user.setPresence({ game: { name: `My Sister Sylveon | L~help for help`, url: 'https://twitch.tv/monstercat', type: 1 } });
 });
 
-bot.on("guildMemberAdd",  member => {
+/*bot.on("guildMemberAdd",  member => {
   const wc = [
     `Welcome ${member.user.username} to ${member.guild.name}. :tada:`,
     `Roses are Red Violets are Blue ${member.user.username} has come to play with you. :basketball_player:`,
@@ -57,6 +57,7 @@ let embed = new Discord.RichEmbed()
 .setThumbnail(member.user.displayAvatarURL)
 cha.send(embed)
 });
+*/
 
 bot.on("message", async message => {
   let messsageArray = message.content.split(" ");
