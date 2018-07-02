@@ -5,34 +5,6 @@ const Music = require('discord.js-musicbot-addon');
 let bot = new Discord.Client();
 let client = new Discord.Client();
 var prefix = 'L~';
-Music.start(bot, {
-  youtubeKey: "AIzaSyChV72AqgUOWab694WT3zdK6EIbY0EGRuc",
-  prefix: "L~", 
-   helpCmd: "mhelp",
-   global: false, 
-   maxQueueSize: 50,
-   playCmd: 'play',  
-   playAlts: ["music", 'moosic'],
-   volumeCmd: 'vol', 
-   thumbnailType: 'high',
-   leaveCmd: 'leave',
-   anyoneCanSkip: true, 
-   disableLoop: false,
-   searchCmd: 'search',
-   requesterName: true,
-   inlineEmbeds: true,     
-   queueCmd: 'queue',
-   queueAlts: ['queue', 'queueue'],
-   pauseCmd: 'pause',
-   resumeCmd: 'resume',
-   skipCmd: 'skip',
-   skipAlts: ["skip", "skipp"],
-   loopCmd: 'loop',
-   enableQueueStat: true,
-});
-
-
-
 var google = `<@409751964662890508>`
 
 
