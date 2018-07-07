@@ -3,7 +3,7 @@ const prefix = "L~"
 let bot = new Discord.Client();
 var math = require('mathjs');
 module.exports.run = async (bot, message, args) => {
-    if(message.content.bot) return;
+    if(message.author.bot) return;
     let input = args.join(" ");
     if (!input) {
         message.reply('Please provide a Math equasion for the calculator to solve!');

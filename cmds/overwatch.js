@@ -5,7 +5,7 @@ const fs = require("fs");
 const overwatch = require('overwatch-api');
 let bot = new Discord.Client();
 module.exports.run = async (bot, message, args) => {
-    if(message.content.bot) return;
+    if(message.author.bot) return;
     const tag = args[0];
     const platform = 'pc';
     const region = args[1];

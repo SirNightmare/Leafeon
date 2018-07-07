@@ -5,7 +5,7 @@ const humanizeduration = require("humanize-duration");
 let bot = new Discord.Client();
 var math = require('mathjs');
 module.exports.run = async (bot, message, args) => {
-	if(message.content.bot) return;
+	if(message.author.bot) return;
     if (args.length > 0) {
         snekfetch.get("https://skimdb.npmjs.com/registry/" + args[0].toLowerCase()).then((body) => {
             message.channel.send({

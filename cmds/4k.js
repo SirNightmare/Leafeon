@@ -3,7 +3,7 @@ const prefix = "L~"
 let bot = new Discord.Client();
 var math = require('mathjs');
 const randomPuppy = require('random-puppy');
-module.exports.run = async (bot, message, args) => {
+exports.run = async (bot, message, args) => {
     if(message.author.bot) return;
     if (!message.channel.nsfw) return message.reply("You can use this command only on nsfw channels!");
     
@@ -26,8 +26,7 @@ module.exports.run = async (bot, message, args) => {
                     embed
                 });
             })
-  }
-
-module.exports.help = {
-    name: "4k"
-}
+        }
+        module.exports.help = {
+            name: "4k"
+        }

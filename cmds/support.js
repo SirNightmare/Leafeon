@@ -4,6 +4,7 @@ const cooldown = new Set();
 const moment = require('moment');
 let client = new Discord.Client();
 module.exports.run = async (bot, message, args) => {
+    if(message.author.bot) return;
     message.delete();
     if (cooldown.has(message.author.id && message.guild.id)) {
         return message.channel.send('**[COOLDOWN]** Sending tickets has **5 Minutes** Cooldown!');

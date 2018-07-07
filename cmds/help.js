@@ -3,7 +3,7 @@ const prefix = "L~"
 let bot = new Discord.Client();
 let client = new Discord.Client();
 module.exports.run = async (bot, message, args) => {
-  if(message.content.bot) return;
+  if(message.author.bot) return;
   message.reply(`Check you DM's :inbox_tray:`)
 var embed = new Discord.RichEmbed()
 .setAuthor(` | Commands`, `${bot.user.avatarURL}`)
@@ -21,7 +21,12 @@ var embed = new Discord.RichEmbed()
 .setAuthor(` | Commands`, `${bot.user.avatarURL}`)
 .setColor("RANDOM")
 .setTitle("Music!")
-.addField(`L~mhelp`, `Music commands!`)
+.addField(`L~add (Video name)`, `Adds a song to queue!`)
+.addField(`L~search (Video name)`, `Adds a song to queue higher accuracy on getting right video!`)
+.addField(`L~play`, `Plays the songs you added to the queue!`)
+.addField(`L~skip`, `Skips a song`)
+.addField(`L~pause`, `Pauses playing song!`)
+.addField(`L~resume`, `Resumes the playing song!`)
 message.author.send(embed)
 
 var embed = new Discord.RichEmbed()

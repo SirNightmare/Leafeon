@@ -3,7 +3,7 @@ const prefix = "L~"
 let bot = new Discord.Client();
 module.exports.run = async (bot, message, args) => {
     message.delete();
-        if(message.content.bot) return;
+        if(message.author.bot) return;
     let apply = args.join(" ");
     let embed = new Discord.RichEmbed()
     .setColor("RANDOM")

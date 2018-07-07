@@ -4,7 +4,7 @@ let bot = new Discord.Client();
 let client = new Discord.Client();
 const superagent = require("superagent");
 module.exports.run = async (bot, message, args) => {
-    if(message.content.bot) return;
+    if(message.author.bot) return;
        
     let {body} = await superagent
     .get(`https://nekos.life/api/v2/img/Random_hentai_gif`);

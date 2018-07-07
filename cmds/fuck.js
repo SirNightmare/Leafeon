@@ -17,8 +17,8 @@ const gifs = [
 ]
 let random = gifs[Math.floor(Math.random() * gifs.length)];
 module.exports.run = async (bot, message, args) => {
+    if(message.author.bot) return;
     if (!message.channel.nsfw) return message.reply(" You must be in a N.S.F.W channel to use this command.");
-    if(message.content.bot) return;
     let embed = new Discord.RichEmbed()
     .setColor("RANDOM")
     .setAuthor(`| ${message.author.username} fucked ${bot.user.username}`, bot.user.avatarURL)

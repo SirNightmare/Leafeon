@@ -4,7 +4,7 @@ let bot = new Discord.Client();
 const pokemonGif = require('pokemon-gif');
 
 module.exports.run = async (bot, message, args) => {
-  if(message.content.bot) return;
+  if(message.author.bot) return;
 var embed = new Discord.RichEmbed()
 .setColor('RANDOM')
 .setImage(pokemonGif(args[0]))
