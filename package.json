@@ -47,6 +47,7 @@
     "weather-js": "^2.0.0",
     "youtube-playlist-info": "^1.1.2",
     "ytdl-core": "^0.20.4",
-    "ytsearcher": "^1.1.2"
+    "ytsearcher": "^1.1.2",
+    "kaori": "^1.1.4"
   }
 }
