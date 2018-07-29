@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 const prefix = "L~"
 let bot = new Discord.Client();
-var math = require('mathjs');
 module.exports.run = async (bot, message, args) => {
     if(message.author.bot) return;
     let online = message.guild.members.filter(member => member.user.presence.status !== 'offline');

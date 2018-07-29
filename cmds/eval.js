@@ -12,30 +12,13 @@ module.exports.run = async (bot, message, args) => {
 
         if (typeof evaled !== "string")
         evaled = require("util").inspect(evaled)
+        let question = args.slice(0).join(" ").replace((/`/g,'\`')) + (" ");
         var embed = new Discord.RichEmbed()
-        message.channel.send({embed: {
-            color: 3447003,
-            author: {
-              name: bot.user.username,
-              icon_url: bot.user.avatarURL
-            },
-            title: `Successfully Evaluated!`,
-            fields: [{
-                name: "Input",
-                value: botmessage
-            },
-            {
-                name: "Output",
-                value: ("x1", clean(evaled))
-            }
-            ],
-            timestamp: new Date(),
-            footer: {
-              icon_url: message.author.avatarURL,
-              text: `${message.author.username}#${message.author.discriminator}`
-            }
-          }       
-        });
+         .setAuthor(" | Evaluated", bot.user.avatarURL)
+         .setColor("GREEN")
+         .addField("Input :inbox_tray: :", `\`\`\`\`${question}\`\`\``)
+         .addField("Output :outbox_tray: :", `\`\`\`\`${("x1", clean(evaled))}\`\`\``)
+         message.channel.send(embed)
     } catch(err) {
         message.channel.send(`\`ERROR\` \`\`\`x1\n${clean(err)}\n\`\`\``);
     }
