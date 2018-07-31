@@ -5,6 +5,7 @@ let bot = new Discord.Client();
 const Kaori = require('kaori');
 const kaori = new Kaori();
 module.exports.run = async (bot, message, args) => {
+    if(settings.allownsfw === "false") return message.reply("Sorry! NSFW has been disabled")
     if(!message.channel.nsfw) return message.reply("Please use a NSFW channel");
     kaori.search(`${args[0]}`, { tags: [`${args[1]}`], limit: 1, random: true })
     .then(images => {(

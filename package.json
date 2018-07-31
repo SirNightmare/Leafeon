@@ -11,6 +11,7 @@
   "dependencies": {
     "azlyricsman": "^0.1.5",
     "child_process": "^1.0.2",
+    "dblapi.js": "^2.2.0",
     "discord.js": "^11.3.2",
     "discord.js-musicbot-addon": "^12.0.6",
     "fortnite": "^4.1.1",
@@ -47,7 +48,6 @@
     "weather-js": "^2.0.0",
     "youtube-playlist-info": "^1.1.2",
     "ytdl-core": "^0.20.4",
-    "ytsearcher": "^1.1.2",
-    "kaori": "^1.1.4"
+    "ytsearcher": "^1.1.2"
   }
 }

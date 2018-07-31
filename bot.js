@@ -5,6 +5,12 @@ const Music = require('discord.js-musicbot-addon');
 let bot = new Discord.Client();
 var prefix = 'L~';
 const active = new Map();
+const DBL = require("dblapi.js");
+const dbl = new DBL(process.env.DBL, bot);
+
+dbl.on("posted", () => {
+  console.log(`Posted ${bot.guilds.size} servers to the DBL api!`)
+});
 
 
 //class Bot extends Discord.Client {
